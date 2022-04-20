@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="heading">
+        <div class="logo">
+            <img class="logo-img" src="/Trang mua hang/Icon/android-chrome-512x512.png">
+        </div>
+        <div class="timkiem">
+            <div class="topnav">
+
+                <div class="search-container">
+                    <form class="form-search" action="/action_page.php">
+                        <select style="font-size: 20px; height: 33px; margin-right: -8px;" name="" id="">
+                            <option value="">T-Shirt</option>
+                            <option value="">Sweater</option>
+                            <option value="">Polo</option>   
+                            <option value="">Shirt</option>
+                            <option value="">Totebag</option>
+                        </select>
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+                 
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a class="active" href="#home">Giới thiệu</a></li>
+                <li><a href="#hang-giam-gia">Ưu đãi</a></li>
+                <li><a href="#contact">Sản phẩm</a></li>
+                <li><a href="/Trang_thanh_toan/index.html">Giỏ hàng</a></li>
+            </ul>
+        </div>
+    </div>
+    <article class="flex-body">
+        <div class="sub-image">
+            <a href="">
+                <img src="/Trang mua hang/Image/so mi cam 2.jpg" alt="Ảnh ao 1">
+            </a>
+            <a href="">
+                <img src="/Trang mua hang/Image/somi mint.jpg" alt="Ảnh áo 1">
+            </a>
+        </div>
+        <div class="main-image">
+            <img src="/Trang mua hang/Image/Monster Shirt.jpg" alt="Ảnh áo 1">
+        </div>
+        <div class="describe">
+            <div class="product-title">
+                <h1> Monster Shirt </h1>
+                <span id="pro-code"> MOS005</span>
+            </div>
+            <div class="price">
+                <span class="discount"> 10% </span>
+                <span class="after-price"> 400.000 đ</span>
+                <del> 500.000 đ</del>
+            </div>
+            <form action="post" id="post-product">
+                <div id="size-color">
+                    <div class="select-swatch-0" data-option="option1" data-option-index="0">
+                        <!--Kích thước-->
+                        <div class="select-wrap size">
+                            <div data-value="M" class="size-M">
+                                <input class="varriant-0" type="radio" name="option1" value="M" data-vhandle="m" checked>
+                                <label for="swatch-0-m" class="szM">
+                                    <span>M</span>
+                                </label>
+                            </div>
+                            <div data-value="L" class="size-L">
+                                <input class="varriant-0" class="varriant-0" type="radio" name="option1" value="L" data-vhandle="l" checked>
+                                <label for="swatch-0-l" class="szL">
+                                    <span>L</span>
+                                </label>
+                            </div>
+                        </div>               
+                    </div>
+                    <div  class="select-swatch-1" data-option="option2" data-option-index="1">
+                        <div class="select-wrap color">
+                            <div data-value="vàng" class="yellow-swatch">
+                                <input class="varriant-1" type="radio" name="option2" value="Vàng" data-vhandle="vang" checked disabled>
+                                <label for="swatch-1-vang" class="vang-color">
+                                    <!--<span>Vàng</span>-->
+                                </label>
+                            </div>
+                            <div data-value="xanh" class="blue-swatch">
+                                <input class="varriant-1" type="radio" name="option2" value="Vàng" data-vhandle="vang" checked disabled>
+                                <label for="swatch-1-xanh" class="xanh-color">
+                                    <!--<span>Xanh</span>-->
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="selector-action">
+                    <div class="quantity-areas">
+                        <input type="button" value="-" onclick="minusQuantity()" class="qty-btn">
+                        <input type="text" id="quantity" name="quantity" value="1" min="1" class="quantity-selector">
+                        <input type="button" value="+" onclick="plusQuantity()" class="qty-btn">
+                    </div>
+                    <div class="wrap-addcart">
+                        <div class="row-flex">
+                            <a href="LVT.html">
+                                <button type="button" name="add" class="add-product">
+                                    <span>Thêm vào giỏ</span>
+                                </button>
+                            </a>
+                            <a href="Icon.html">
+                                <button type="button" name="buy" class="buy-now" >
+                                    <span>Mua ngay</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="des_pro">
+                <p class="des_title"> Chi tiết sản phẩm:</p>
+                <p class="des"> Chất liệu: Sợi tổng hợp</p>
+                <p class="des"> Oversize</p>
+                <p class="des">Màu sắc: Organe/Mint</p>
+                <p class="des_title"> Size Chart:</p>
+                <div class="size-image">
+                    <a href="">
+                        <img src="/Trang mua hang/Image/size.jpg" alt="size 2">
+                    </a>
+        </div>
+        </div>
+    </article>
+    <div class="footer">
+        <div class="about">
+            <h2>Giới thiệu</h2>
+            <p>Sweet Memories   chuyên thời trang hiện đại, thời trang dạo phố với giá tốt nhất. Sản phẩm đẹp từ chất liệu đến kiểu dáng chắc chắn sẽ làm hài lòng quý khách hàng..</p>
+        </div>
+        <div class="contact">
+            <h2>Liên hệ</h2>
+            <div class="support">
+                <p>Địa chỉ: 414/12, Nơ Trang long, phường 13, quận Bình Thạnh, TP. Hồ Chí Minh.</p>
+                <p>Mail: sweetmemories414@gmail.com</p>
+                <p>Điện thoại: 0371572376</p>
+            </div>
+        </div>
+        <div class="links">
+            <h2>Hỗ trợ</h2>
+            <div class="item">
+                <ul>
+                    <li><a href="">Tìm kiếm</a></li>
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="">Bảo mật</a></li>
+                </ul>    
+                <ul>
+                    <li><a href="">Chính sách đổi trả</a></li>
+                    <li><a href="">Điều khoản và dịch vụ</a></li>
+                    <li><a href="">Chăm sóc khách hàng</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
